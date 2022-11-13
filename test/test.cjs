@@ -1,10 +1,6 @@
-const Dogleg = require('.')
-
-// import Dogleg from './index'
-// require Dogleg
+const Dogleg = require('../dist_cjs/index.cjs')
 
 const clog = console.log
-// let {} = dogleg(f)
 
 let f = (stack) => {
   // stack: {
@@ -36,18 +32,11 @@ let createStack = (value, priority) => {
 }
 
 let dogleg = new Dogleg(f)
-
-// clog('dogleg')
-// clog(f)
 dogleg.stackList.entryQueue(createStack(3, 2))
-
-// stackList.entryQueue(createStack(3, 2))
 dogleg.stackList.entryQueue(createStack(4, 2))
 dogleg.stackList.entryQueue(createStack(6, 1))
 dogleg.stackList.entryQueue(createStack(7, 3))
 dogleg.stackList.entryQueue(createStack(5, 2))
-// clog(dogleg)
-// // clog(stackList)
 dogleg.runQueue()
 setTimeout(() => {
   clog('取消')

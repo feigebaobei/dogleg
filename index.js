@@ -122,5 +122,5 @@ class Dogleg {
   }
 }
 
-// export default Dogleg
-module.exports = Dogleg
+export default Dogleg
+// module.exports = Dogleg

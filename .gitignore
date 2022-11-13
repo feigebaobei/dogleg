@@ -1,6 +1,9 @@
 node_modules
 .DS_Store
 dist
+dist_esm
+dist_cjs
+dist
 dist-ssr
 *.local
 .nyc_output
