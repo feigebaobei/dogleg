@@ -59,6 +59,16 @@ setTimeout(() => {
 }, 2500)
 ```
 
+## stack
+任务对象的数据结构  
+priority属性值越大越优先  
+```js
+{
+  priority: number,
+  [string]?: any
+}
+```
+
 ## api
 
 ```js
@@ -70,10 +80,10 @@ dogleg: {
   interrupt() // 打断执行任务的方法的方法
   isRunning // 是否正在执行任务
   // 原型属性
-  runQueue // 执行队列中的任务
-  runStackList // 执行队列中的任务
-  runStack // 执行单个任务的方法
-  createCancel // 创建打断任务的方法
+  runQueue() // 执行队列中的任务
+  runStackList() // 执行队列中的任务
+  runStack() // 执行单个任务的方法
+  createCancel() // 创建打断任务的方法
 }
 ```
 
@@ -94,10 +104,7 @@ todo
 
 ## todo
 
-> 打包为 cjs/esm  
 > 基于 datastone  
 > opStack 中添加前一个任务的结果、额外参数  
-> gitignore  
-> push  
-> 数据结构  
-> priority 越大越优先
+> 接入worker  
+
