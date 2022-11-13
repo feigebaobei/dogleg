@@ -7,13 +7,13 @@ let f = (stack) => {
   //   value: number,
   //   priority: number
   // }
-  // let r = fib(stack.value)
-  let r = new Promise((s, j) => {
-    setTimeout(() => {
-      s(stack.value)
-    }, 1000)
-  })
-  clog(`第 ${stack.value}个的值：${r}`)
+  let r = fib(stack.value)
+  // let r = new Promise((s, j) => {
+  //   setTimeout(() => {
+  //     s(stack.value)
+  //   }, 1000)
+  // })
+  clog(`第${stack.value}个的值：${r}`)
   return r
 }
 let fib = (n) => {
