@@ -60,8 +60,10 @@ setTimeout(() => {
 ```
 
 ## stack
+
 任务对象的数据结构  
-priority属性值越大越优先  
+priority 属性值越大越优先
+
 ```js
 {
   priority: number,
@@ -106,5 +108,4 @@ todo
 
 > 基于 datastone  
 > opStack 中添加前一个任务的结果、额外参数  
-> 接入worker  
-
+> 接入 worker
