@@ -15,8 +15,7 @@
     "p": "prettier --write .",
     "pc": "prettier --check .",
     "prepare": "husky install",
-    "rollup": "rollup --config",
-    "publish": "npm run publist --beta"
+    "rollup": "rollup --config"
   },
   "repository": {
     "type": "git",
