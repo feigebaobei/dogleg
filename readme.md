@@ -84,5 +84,9 @@ todo
 
 ## todo
 > 打包为cjs/esm  
-> 基于datastone
-> opStack中添加前一个任务的结果、额外参数
+> 基于datastone  
+> opStack中添加前一个任务的结果、额外参数  
+> gitignore  
+> push  
+> 数据结构  
+> priority越大越优先  
